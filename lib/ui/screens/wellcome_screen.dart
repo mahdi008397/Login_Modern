@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:video_player/video_player.dart';
 
 class WellcomeScreen extends StatefulWidget {
@@ -67,14 +69,14 @@ class _WellcomeScreenState extends State<WellcomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   SizedBox(
-                    height: screenH * 0.33,
+                    height: screenH * 0.35,
                   ),
                   Image.asset(
                     'assets/media/app-logo.png',
                     scale: 2,
                   ),
-                  const SizedBox(
-                    height: 30,
+                  SizedBox(
+                    height: screenH * 0.034,
                   ),
                   const Text(
                     'Milions of Songs.\nFree on Tunify',
@@ -86,8 +88,8 @@ class _WellcomeScreenState extends State<WellcomeScreen> {
                       color: Colors.white,
                     ),
                   ),
-                  const SizedBox(
-                    height: 30,
+                  SizedBox(
+                    height: screenH * 0.023,
                   ),
                   const Text(
                     'I can chase you and I can catch you, but there\nis nothing I can do to mae you mine',
@@ -99,15 +101,20 @@ class _WellcomeScreenState extends State<WellcomeScreen> {
                       color: Colors.white,
                     ),
                   ),
-                  const SizedBox(
-                    height: 30,
+                  SizedBox(
+                    height: screenH * 0.034,
                   ),
-                  Container(
-                    width: 357,
-                    height: 52,
-                    decoration: const BoxDecoration(
-                      color: Color.fromRGBO(95, 25, 242, 1),
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: Size(screenW * 0.86, screenH * 0.058),
+                      backgroundColor: const Color.fromRGBO(95, 25, 242, 1),
+                      surfaceTintColor: const Color.fromRGBO(104, 34, 251, 1),
+                      shadowColor: Colors.transparent,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                     ),
                     child: const Center(
                       child: Text(
@@ -121,90 +128,122 @@ class _WellcomeScreenState extends State<WellcomeScreen> {
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 30,
+                  SizedBox(
+                    height: screenH * 0.023,
                   ),
-                  Container(
-                    width: 357,
-                    height: 52,
-                    decoration: const BoxDecoration(
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: Size(screenW * 0.86, screenH * 0.058),
+                      padding: const EdgeInsets.all(0),
+                      backgroundColor: const Color.fromRGBO(32, 41, 51, 1),
+                      surfaceTintColor: const Color.fromRGBO(41, 50, 60, 1),
+                      shadowColor: Colors.transparent,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Center(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Image.asset(
-                              'assets/media/google-logo.png',
-                              scale: 2,
-                            ),
-                            const Text(
-                              'Continue with Google',
-                              style: TextStyle(
-                                fontSize: 13,
-                                fontFamily: 'Sf',
-                                fontWeight: FontWeight.w600,
-                                color: Colors.white,
+                    child: SizedBox(
+                      width: screenW * 0.86,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Image.asset(
+                                'assets/media/google-logo.png',
+                                scale: 2,
                               ),
-                            ),
-                            const SizedBox(
-                              width: 2,
-                            ),
-                          ],
+                              const Text(
+                                'Continue with Google',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontFamily: 'Sf',
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 2,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 15,
+                  SizedBox(
+                    height: screenH * 0.012,
                   ),
-                  Container(
-                    width: 357,
-                    height: 52,
-                    decoration: const BoxDecoration(
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: Size(screenW * 0.86, screenH * 0.058),
+                      padding: const EdgeInsets.all(0),
+                      backgroundColor: const Color.fromRGBO(32, 41, 51, 1),
+                      surfaceTintColor: const Color.fromRGBO(41, 50, 60, 1),
+                      shadowColor: Colors.transparent,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Center(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Image.asset(
-                              'assets/media/apple-logo.png',
-                              scale: 2,
-                            ),
-                            const Text(
-                              'Continue with Google',
-                              style: TextStyle(
-                                fontSize: 13,
-                                fontFamily: 'Sf',
-                                fontWeight: FontWeight.w600,
-                                color: Colors.white,
+                    child: SizedBox(
+                      width: screenW * 0.86,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Image.asset(
+                                'assets/media/apple-logo.png',
+                                scale: 2,
                               ),
-                            ),
-                            const SizedBox(
-                              width: 2,
-                            ),
-                          ],
+                              const Text(
+                                'Continue with Google',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontFamily: 'Sf',
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 2,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 40,
+                  SizedBox(
+                    height: screenH * 0.045,
                   ),
-                  const Text(
-                    'Log in',
-                    style: TextStyle(
-                      fontSize: 13,
-                      fontFamily: 'Sf',
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: Size(screenW * 0.86, screenH * 0.058),
+                      padding: const EdgeInsets.all(0),
+                      backgroundColor: const Color.fromRGBO(32, 41, 51, 1),
+                      surfaceTintColor: const Color.fromRGBO(41, 50, 60, 1),
+                      shadowColor: Colors.transparent,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    ),
+                    child: const Text(
+                      'Log in',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontFamily: 'Sf',
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ],
