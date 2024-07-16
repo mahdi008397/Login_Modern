@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:login_modern/ui/screens/wellcome_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarIconBrightness: Brightness.light,
+  ));
+
   runApp(const MainApp());
 }
 
@@ -10,14 +19,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            'Hello World!',
-            style: TextStyle(fontFamily: 'Sf'),
-          ),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: WellcomeScreen(),
     );
   }
 }
