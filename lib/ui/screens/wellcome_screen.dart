@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:login_modern/ui/screens/login_screen.dart';
 import 'package:video_player/video_player.dart';
 
 class WellcomeScreen extends StatefulWidget {
@@ -224,7 +223,13 @@ class _WellcomeScreenState extends State<WellcomeScreen> {
                     height: screenH * 0.045,
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LoginScreen(),
+                          ));
+                    },
                     style: ElevatedButton.styleFrom(
                       minimumSize: Size(screenW * 0.86, screenH * 0.058),
                       padding: const EdgeInsets.all(0),
