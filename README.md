@@ -17,7 +17,7 @@ Login Modern is a small project in which we implemented three pages of a music a
   <img src="Screenshot-1.jpg" width="250px"  alt="Wellcome Screen" />
   <img src="Screenshot-2.jpg" width="250px"  alt="Login Screen" />
   <img src="Screenshot-3.jpg" width="250px"  alt="Register Screen" />
-  [<img src="Screenshot-1.jpg" width="50%">](Demo.mp4 "Demo")
+  [![Watch the video](Screenshot-1.jpg)](Demo.mp4)
 </p>
 
 ## Dependencies
