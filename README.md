@@ -30,7 +30,7 @@ Login Modern is a small project in which we implemented three pages of a music a
 ### Getting Started
 
 ```shel
-git@github.com:mahdi008397/Login_Modern.git
+git clone git@github.com:mahdi008397/Login_Modern.git
 cd login_modern
 flutter create . --platforms=linux,android
 flutter pub get
