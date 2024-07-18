@@ -1,8 +1,8 @@
 # The Modern Login Template
 
-<!-- <p float="left">
-  <img src="cover.jpg" alt="cover" />
-</p> -->
+<p float="left">
+  <img src="cover.png" alt="cover" />
+</p>
 
 ## Description
 
